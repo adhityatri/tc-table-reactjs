@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "communityName": "Komunitas 1",
+    "typeOfCommunity": "Media Partner",
+    "location": "Jakarta",
+    "phoneNumber": "08255541514",
+    "email": "komunitas1@gmail.com"
+  },
+  {
+    "id": 2,
+    "communityName": "Komunitas 2",
+    "typeOfCommunity": "Media Partner",
+    "location": "Jakarta",
+    "phoneNumber": "08255541514",
+    "email": "komunitas1@gmail.com"
+  },
+  {
+    "id": 3,
+    "communityName": "Komunitas 3",
+    "typeOfCommunity": "Media Partner",
+    "location": "Jakarta",
+    "phoneNumber": "08255541514",
+    "email": "komunitas1@gmail.com"
+  },
+  {
+    "id": 4,
+    "communityName": "Komunitas 4",
+    "typeOfCommunity": "Media Partner",
+    "location": "Jakarta",
+    "phoneNumber": "08255541514",
+    "email": "komunitas1@gmail.com"
+  }
+]
