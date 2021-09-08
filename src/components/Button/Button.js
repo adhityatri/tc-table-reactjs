@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonStyled } from "./Button.style";
 
-const Button = ({ children, onClick, type, margin, bg, color }) => {
+const Button = ({ children, onClick, type, margin, bg, color, isDisabled }) => {
   return (
     <ButtonStyled
       backgroundColor={bg}
@@ -9,6 +9,7 @@ const Button = ({ children, onClick, type, margin, bg, color }) => {
       margin={margin}
       onClick={onClick}
       type={type}
+      disabled={isDisabled}
     >
       {children}
     </ButtonStyled>

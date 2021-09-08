@@ -20,4 +20,8 @@ export const ButtonStyled = styled.button`
   &:focus {
       opacity: .9;
   }
+
+  &:disabled {
+      cursor: not-allowed;
+  }
 `;

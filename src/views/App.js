@@ -43,6 +43,7 @@ const App = () => {
   });
   const [editId, setEditId] = useState(null);
   const [newData, setNewData] = useState(false);
+  const [isEdited, setisEdited] = useState(false);
 
   const handleEdit = (event, value) => {
     event.preventDefault();
@@ -65,14 +66,15 @@ const App = () => {
 
     if (find) {
       source[find] = formData;
-      console.log(source);
       setKomunitas(source);
       setEditId(null);
+      setisEdited(false);
     }
   };
 
   const handleSelect = (event) => {
     setFormData({ ...formData, typeOfCommunity: event.target.value });
+    setisEdited(true);
   };
 
   const handleCancel = (event) => {
@@ -91,6 +93,7 @@ const App = () => {
     if (newData) {
       setNewData(false);
     }
+    setisEdited(false);
   };
 
   const handleFormChange = (event) => {
@@ -102,6 +105,7 @@ const App = () => {
     const newFormData = { ...formData };
     newFormData[fieldName] = fieldValue;
 
+    setisEdited(true);
     setFormData(newFormData);
   };
 
@@ -134,6 +138,7 @@ const App = () => {
     const source = [...komunitas, ProcessedData];
     setKomunitas(source);
     setNewData(false);
+    setisEdited(false);
   };
 
   return (
@@ -220,6 +225,7 @@ const App = () => {
                           color="white"
                           margin="0 5"
                           type="submit"
+                          isDisabled={!isEdited ? true : false}
                         >
                           Save
                         </Button>
