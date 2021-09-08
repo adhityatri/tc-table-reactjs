@@ -7,6 +7,7 @@ const App = () => {
   const [komunitas, setKomunitas] = useState(data);
   return (
     <AppContainer>
+      <h2>List Of Community</h2>
       <Table>
         <Table.Head>
           <Table.TR>
@@ -21,19 +22,22 @@ const App = () => {
         <Table.Body>
           {komunitas.map((item) => (
             <Table.TR>
-              <Table.TH>{item.communityName}</Table.TH>
-              <Table.TH>{item.typeOfCommunity}</Table.TH>
-              <Table.TH>{item.location}</Table.TH>
-              <Table.TH>{item.phoneNumber}</Table.TH>
-              <Table.TH>{item.email}</Table.TH>
-              <Table.TH>
+              <Table.TD>{item.communityName}</Table.TD>
+              <Table.TD>{item.typeOfCommunity}</Table.TD>
+              <Table.TD>{item.location}</Table.TD>
+              <Table.TD>{item.phoneNumber}</Table.TD>
+              <Table.TD>{item.email}</Table.TD>
+              <Table.TD>
                 <button>Edit</button>
                 <button>Delete</button>
-              </Table.TH>
+              </Table.TD>
             </Table.TR>
           ))}
         </Table.Body>
       </Table>
+      <div className="action">
+        <button>Add New Community</button>
+      </div>
     </AppContainer>
   );
 };

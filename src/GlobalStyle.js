@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import Theme from "./Theme";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -11,17 +12,26 @@ const GlobalStyle = createGlobalStyle`
         width: 100vw;
         height: 100vh;
         display: flex;
-        justify-content: center;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 16px;
         text-align: left;
     }
+    .app{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: ${Theme.colors.backgroundColor};
+    }
 `;
 
 export const AppContainer = styled.div`
-  padding: 12px;
+  padding: ${Theme.padding};
   display: flex;
-  flex: 1;
+  align-items: center;
+  background-color: white;
+  flex-direction:column;
 `;
 
 export default GlobalStyle

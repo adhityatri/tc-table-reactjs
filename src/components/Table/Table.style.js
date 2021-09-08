@@ -5,6 +5,8 @@ export const TableStyled = styled.table`
   border: 1px solid ${theme.colors.outlineColor};
   box-shadow: ${theme.colors.boxShadow};
   font-weight: normal;
+  border-collapse: collapse;
+  /* table-layout: fixed; */
 `;
 
 export const TableHead = styled.thead`
@@ -13,7 +15,8 @@ export const TableHead = styled.thead`
 `;
 
 export const TableFoot = styled.tfoot`
-  /* border: 1px solid blue; */
+  border-top: 1px solid red;
+  background-color: ${theme.colors.stickyCartColor};
 `;
 
 export const TableBody = styled.tbody`
@@ -31,4 +34,9 @@ export const TH = styled.th`
 
 export const TD = styled.td`
   /* border: 1px solid blue; */
+`;
+
+export const TableTitle = styled.div`
+  height: 50px;
+  background-color: aqua;
 `;
