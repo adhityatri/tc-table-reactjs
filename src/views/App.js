@@ -56,6 +56,7 @@ const App = () => {
       email: value.email,
     });
     setEditId(value.id);
+    setNewData(false);
   };
 
   const handleSaveEdit = (event, value) => {
@@ -120,6 +121,7 @@ const App = () => {
   const handleNewData = (event) => {
     event.preventDefault();
 
+    setEditId(null);
     setNewData(true);
   };
 
@@ -201,7 +203,7 @@ const App = () => {
                       <Table.TD>
                         <input
                           required="required"
-                          type="number"
+                          type="text"
                           name="phoneNumber"
                           pattern="^0\d[0-9]*"
                           onChange={handleFormChange}
