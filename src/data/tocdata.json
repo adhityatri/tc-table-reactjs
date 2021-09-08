@@ -1,0 +1,18 @@
+[
+  {
+    "value": "mediapartner",
+    "label": "Media Partner"
+  },
+  {
+    "value": "hiringpartner",
+    "label": "Hiring Partner"
+  },
+  {
+    "value": "influencer",
+    "label": "Influencer"
+  },
+  {
+    "value": "other",
+    "label": "Other"
+  }
+]

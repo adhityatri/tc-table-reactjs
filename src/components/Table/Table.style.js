@@ -33,7 +33,8 @@ export const TH = styled.th`
 `;
 
 export const TD = styled.td`
-  /* border: 1px solid blue; */
+  border: 1px solid ${theme.colors.outlineColor};
+  padding: 4px;
 `;
 
 export const TableTitle = styled.div`

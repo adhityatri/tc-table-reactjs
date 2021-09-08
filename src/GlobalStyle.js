@@ -24,12 +24,20 @@ const GlobalStyle = createGlobalStyle`
         flex-direction: column;
         background: ${Theme.colors.backgroundColor};
     }
+    input, select{
+        border-radius: 0;
+        border: 1px solid ${Theme.colors.outlineColor};
+        height: 30px;
+        background-color: ${Theme.colors.outlineColor};
+        padding: 0 4px;
+        width: 100%;
+    }
 `;
 
 export const AppContainer = styled.div`
   padding: ${Theme.padding};
   display: flex;
-  align-items: center;
+  height: 500px;
   background-color: white;
   flex-direction:column;
 `;
